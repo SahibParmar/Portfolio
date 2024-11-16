@@ -60,6 +60,7 @@ color: #ffffff;
 /* Body text general styles */
 body {
     background-image:url('Header_BG2.webp'); 
+    background-attachment: fixed;
     background-color: #000;  /* Dark background for body */
     color: #d3d3d3;  /* Light grey text for readability */
     font-family: 'Arial', sans-serif;
