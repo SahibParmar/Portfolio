@@ -19,7 +19,8 @@
 }
 
 header {
-    background-color: #1a1a1a;  /* Dark background */
+    
+    background-color: #939fff;  /* Dark background */
     color: #00ffcc;  /* Neon-like text color */
     padding: 20px;
     text-align: center;
@@ -28,8 +29,9 @@ header {
 
 
 header h1 {
-color: #ffffff;
+color: #000000;
     font-family: 'Roboto', sans-serif;
+    color: #;
     font-size: 2.5em;
     margin: 0;
 }
@@ -47,17 +49,18 @@ color: #ffffff;
 }
 
 .contact-info a {
-    color: #ff9933;  /* Contrast color for email and phone */
+    color: #000000;  /* Contrast color for email and phone */
     text-decoration: none;  /* Remove underline */
 }
 
 .contact-info a:hover {
-    color: #ff6600;  /* Lighter hover effect */
+    color: #333fff;  /* Lighter hover effect */
 }
 
 /* Body text general styles */
 body {
-    background-color: #121212;  /* Dark background for body */
+    background-image:url('Header_BG2.webp'); 
+    background-color: #000;  /* Dark background for body */
     color: #d3d3d3;  /* Light grey text for readability */
     font-family: 'Arial', sans-serif;
 }
