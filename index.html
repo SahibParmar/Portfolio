@@ -1,84 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Sahib Parmar - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sahib Parmar</title>
+<style>
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        margin: 0;
+        background-color: #0d1117;
+        color: #e6edf3;
+    }
+    header {
+        text-align: center;
+        padding: 2rem 1rem;
+    }
+    header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+        color: #58a6ff;
+    }
+    header p {
+        font-size: 1.2rem;
+        color: #8b949e;
+    }
+    .container {
+        max-width: 1100px;
+        margin: auto;
+        padding: 1rem;
+        display: grid;
+        gap: 2rem;
+    }
+    .card {
+        background-color: #161b22;
+        border-radius: 10px;
+        padding: 1.5rem;
+        box-shadow: 0 0 10px rgba(88, 166, 255, 0.15);
+        transition: transform 0.2s ease;
+    }
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0 15px rgba(88, 166, 255, 0.3);
+    }
+    h2 {
+        color: #58a6ff;
+        border-bottom: 2px solid #30363d;
+        padding-bottom: 0.3rem;
+        margin-bottom: 1rem;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+    ul li {
+        margin-bottom: 0.5rem;
+    }
+    a {
+        color: #58a6ff;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    .grid {
+        display: grid;
+        gap: 1rem;
+    }
+    @media (min-width: 768px) {
+        .grid-2 {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .grid-3 {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+</style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Sahib Parmar</h1>
-            <p style='color:#000000'>Science Enthusiast | Machine Learning | Deep Learning | Quantum Computing</p>
-            <div class="contact-info">
-                <p style='color:#000000'>Email: <a href="mailto:sahibp318@gmail.com">sahibp318@gmail.com</a></p>
-                <p style='color:#000000'>Phone: <a href="tel:+919978611159">9978611159</a></p>
-            </div>
-        </div>
-    </header>
 
-    <section id="education">
-        <h2>Education</h2>
-        <ul>
-            <li><strong>Institute of Technology, Nirma University</strong><br> B.Tech in Computer Science and Engineering (6th Sem PPI: 8.33)</li>
-            <li><strong>P.P. Savani Chaitanya Vidya Sankul</strong><br> HSC: 90.8% | SSC: 94.17%</li>
-        </ul>
-    </section>
+<header>
+    <img src="profile.jpeg" alt="Sahib Parmar" 
+     style="width:150px;height:150px;border-radius:50%;object-fit:cover;
+            object-position: 50% 20%;
+            border:3px solid #58a6ff;box-shadow:0 0 10px rgba(88,166,255,0.5);
+            margin-bottom:1rem;">
+    <h1>Sahib Parmar</h1>
+    <p>AI Researcher | Machine Learning | Quantum Computing Enthusiast</p>
+    <p><em>"Curiosity, Science, Engineering,and a hint of philosophy."</em></p>
+</header>
 
-    <section id="achievements">
-        <h2>Achievements</h2>
-        <ul>
-            <li>GATE 2024 (DA) - AIR 49, Score: 840/1000</li>
-            <li>GATE 2024 (CS) - AIR 1937, Score: 624/1000</li>
-            <li>Won Best Beginner's Hack in Hack-NU-thon 3.0</li>
-            <li>Published a paper on Quantum Computing in IEEE Xplore</li>
-            <li>NPTEL Quantum Computing with Elite Silver Medal</li>
-            <li>IBM Basics of Quantum Information Certification</li>
-        </ul>
-    </section>
+<div class="container">
 
-    <section id="skills">
+    <div class="card">
+        <h2>About Me</h2>
+        <p>
+            I’m a Computer Science and Engineering graduate from Nirma University, 
+            Persuing M.Tech(CSE) at IIT Kanpur. I work in AI, Quantum Computing, and agentic AI systems.
+            Outside academics, I enjoy drawing, photography, reading about philosophy & physics, and 
+            workouts.
+        </p>
+    </div>
+
+    <div class="card">
         <h2>Skills</h2>
         <ul>
-            <li>Machine Learning, Deep Learning, Quantum Computing (Basics)</li>
-            <li>Programming: Python, C, Pytorch Framework, HTML, CSS, Javascript</li>
-            <li>Mathematics: Linear Algebra, Calculus, Probability, Numerical Methods</li>
+            <li>Machine Learning & Deep Learning (PyTorch)</li>
+            <li>Generative AI</li>
+            <li>Quantum Computing</li>
+            <li>Agentic AI Systems (foundational)</li>
+            <li>Computer Vision & NLP</li>
         </ul>
-    </section>
-    
-    <section id="Internships">
-        <h2>Iternships</h2>
-        <ul>
-            <li><strong>Machine Learning Internship at Prodigy Infotech.</strong> - Implemented concepts like Regression, classification, unsupervised Learning, Deep Learning concepts like transfer learning</li>
-        </ul>
-    </section>
+    </div>
 
-    <section id="projects">
+    <div class="card">
+        <h2>Research Experience</h2>
+        <ul>
+            <li>
+                <strong>ISRO-Funded Crater Detection & Identification</strong> – 
+                Experimented with segmentation methods, implemented a TransUNet-based architecture for lunar crater segmentation using NASA THEMIS and Chandrayaan-2 OHRC datasets, and developed a Streamlit-based annotation tool.
+            </li>
+            <li>
+                <strong>Published Paper in Sinconf’23 – Quantum Computing</strong> – 
+                Authored and presented a paper exploring superposition, entanglement, and potential applications in next-generation computing systems.
+            </li>
+            <li>
+                <strong>Google Scholar profile:</strong> <a href="https://scholar.google.com/citations?hl=en&user=5swKf4oAAAAJ"> Link </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="card">
         <h2>Projects</h2>
+        <div class="grid grid-2">
+            <div>
+                <strong>CLIP-based Person ReIdentification</strong>
+                <p>Custom SiameseCLIP model for image similarity task (tested on Market1501,DukeMTMC, Occluded Duke, CUHK03 datasets).</p>
+            </div>
+            <div>
+                <strong>Mini Quantum Transpiler</strong>
+                <p>Optimized quantum circuits by minimizing gate count and depth.</p>
+            </div>
+            <div>
+                <strong>LLM-based Tool-Using Agent</strong>
+                <p>Multi-agent AI with safe code execution, web search, research paper retrieval and ability to notify alerts on telegram.</p>
+            </div>
+            <div>
+                <strong>Lightweight Coder AI</strong>
+                <p>3B-parameter Qwen-2.5 fine-tuned with LoRA and 4-bit quantization to solve medium (and some hard) LeetCode problems in ≈2GB memory — fast, compact, and practical. Hugging Face: repo & merged model.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Achievements</h2>
         <ul>
-            <li><strong>Natural Language to SQL Converter</strong> - Developed using Streamlit and Postman API.</li>
-            <li><strong>Food Image Classification and Calorie Estimation</strong> - Built with CLIP model and Food101 dataset.</li>
-            <li><strong>Hand Gesture Recognition using DL</strong> - Utilized ResNet and transfer learning techniques.</li>
-            <li><strong>Forest of Elements: ML for Atomic Radius Prediction</strong> - Applied Random Forest model.</li>
-            <li><strong>AI-based Surveillance System - Person ReIdentification (Ongoing)</strong> - Using Siamese network and experimenting with Vision Transformer (ViT).</li>
+            <li>GATE CS 2025 – AIR 125 (863/1000)</li>
+            <li>GATE DA 2024 – AIR 49 (840/1000)</li>
+            <li>Hack-NU-thon 3.0 – Best Beginner’s Hack</li>
+            <li>NPTEL Quantum Computing – Elite Silver Medal</li>
         </ul>
-    </section>
-
-    <section id="profiles">
-        <h2>Professional Profiles</h2>
+    </div>
+    <div class="card">
+        <h2>Hobbies</h2>
         <ul>
-            <li><a href="https://github.com/SahibParmar" target="_blank">GitHub</a></li>
-            <li><a href="https://leetcode.com/21bce180" target="_blank">LeetCode</a></li>
-            <li><a href="https://www.linkedin.com/in/sahib-parmar-485b37281/" target="_blank">LinkedIn</a></li>
+            <li>Sketching</li>
+            <li>Photography</li>
+            <li>Philosophy</li>
+            <li>Workouts and martial arts (with flavour of nunchucks!)</li>
         </ul>
-    </section>
+    </div>
+    <div class="card">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:sahibp318@gmail.com">sahibp318@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/SahibParmar">github.com/SahibParmar</a></p>
+        <p>LeetCode: <a href="https://leetcode.com/21bce180">leetcode.com/21bce180</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/sahib-parmar-485b37281/">Profile Link</a></p>
+    </div>
 
-    <footer>
-        <p>&copy; 2024 Sahib Parmar. All Rights Reserved.</p>
-    </footer>
+</div>
 
-    <script src="script.js"></script>
 </body>
 </html>
